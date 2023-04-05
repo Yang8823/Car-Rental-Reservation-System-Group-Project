@@ -1,0 +1,287 @@
+.car-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid #ccc;
+  transition: background-color 0.5s ease;
+}
+
+.car-container img {
+  display: flex;
+  margin-bottom: 10px;
+  height: 250px;
+  width: 350px;
+  margin-right: 20px;
+}
+
+.car-container:hover {
+  border-color: #4CAF50; /* new background color on hover */
+}
+
+.car-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+.car-details button{
+  margin-left: 1275px;
+  width: 8%;
+  border: none;
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.car-details button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/*h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.car-collection-header {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.luxury-car-header {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}*/
+
+.car-collection-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  color: #333333;
+  background-color: #FFFFFF;
+  transition: background-color 0.5s;
+}
+
+.car-collection-header:hover {
+  background-color: #413332;
+  color: #FFFFFF;
+}
+
+.luxury-car-header {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 50px;
+  opacity: 0;
+  animation: fade-in 1.0s ease-out forwards;
+  text-decoration: underline;
+  text-decoration-color: #4CAF50;
+  text-underline-offset: 0.5em;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4CAF50;
+}
+
+.car-details {
+  flex: 1;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.logo {
+  margin-left: 20px; /* adjust the value as needed */
+}
+
+.logo img {
+  height: 60px; /* adjust the height as needed */
+}
+
+.search input[type="text"] {
+  width: 300px; /* adjust the width as needed */
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333; /* change the color as needed */
+}
+
+nav a:hover {
+  color: #4CAF50; /* change the color as needed */
+}
+
+/* book a car section*/
+.book-a-car {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-top: 20px;
+
+}
+
+.book-a-car h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+
+}
+
+.book-a-car-line {
+  height: 5px;
+  background-color: #4CAF50;
+  margin-bottom: 20px;
+  margin-top: -5px; /* adjust the margin-top to move the line up */
+}
+
+
+
+/*
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group input[type="date"] {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group button {
+  background-color: #4CAF50;
+  color: #fff;
+}
+*/
+
+.car-container:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.car-details {
+  transition: transform 0.3s ease-in-out;
+}
+
+.car-container:hover .car-details {
+  transform: translateY(-10px);
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+section{
+  width: 100%;
+  height: 300vh;
+  background-size: cover;
+}
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #27ae60;
+  bottom: 40px;
+  right: 50px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+
+
+
+
+
+

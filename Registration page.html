@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="registrationstyles.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <form action="registration.php" method="post">
+                <h2>Registration</h2>
+                <div class="content">
+                    <div class="inputbox">
+                        <label for="">Staff ID</label>
+                        <input type="text" id="text" class="textbox" name="staff_id" placeholder="Enter Staff ID" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="">Password</label>
+                        <input type="text" id="text" class="textbox" name="password" placeholder="Enter a password" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="">Confirm Password</label>
+                        <input type="text" id="text" class="textbox" name="confirm_password" placeholder="Reenter password" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="">First Name</label>
+                        <input type="text" id="text" class="textbox" name="first_name" placeholder="Enter First Name" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="">Last Name</label>
+                        <input type="text" id="text" class="textbox" name="last_name" placeholder="Enter Last Name" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="">Position</label>
+                        <input type="text" id="text" class="textbox" name="position" placeholder="Enter Work Position" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="">Hired Date</label>
+                        <input type="date" id="text" class="textbox" name="hired_date" placeholder="Enter Hired Date" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="">Email Address</label>
+                        <input type="email" id="text" class="textbox" name="email" placeholder="Enter Email Address" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="">Phone Number</label>
+                        <input type="text" id="text" class="textbox" name="phone_number" placeholder="Enter Phone Number" required>
+                    </div>
+                </div>
+
+                <div class="button_container">
+                    <button name="submit" type="submit">Register</button>
+                </div>
+                
+                <div class="back">
+                    <p><a href="Login_page.html">Back to login</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

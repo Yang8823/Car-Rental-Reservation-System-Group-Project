@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="loginstyles.css">
+    </head>
+    <body>
+        <section>
+        <div class="formbox">
+            <div class="formvalue">
+                <form action="login.php" onsubmit="return isvalid()" method="post">
+                    <h2>Staff Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="id-card-outline"></ion-icon>
+                        <input type="text" id="text" class="textbox" name="staff_id" required>
+                        <label for="">Staff ID</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="password" class="textbox" name="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <input type="checkbox">
+                        <label for="">Remember Me | <a href="Forget page.html">Forget Password</a></label>
+                    </div>
+                    <button name="submit" type="submit">Log in</button>
+                    <div class="register">
+                        <p>New Staff? <a href="Registration page.html">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function isvalid(){
+            var staff_id = document.form.staff_id.value;
+            var password = document.from.password.value;
+            if(staff_id=="" && password.length==""){
+                alert("Staff ID and Password field is empty!");
+                return false
+            }
+            else{
+                if(staff_id.length==""){
+                    alert("Staff ID is empty!");
+                    return false
+                }
+                if(password==""){
+                    alert("Password is empty!");
+                    return false
+                }
+            }
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
